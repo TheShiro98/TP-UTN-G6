@@ -201,6 +201,13 @@ body {
     margin: 5rem;
 }
 
+@media screen and (max-width: 700px) {
+    #map-container{
+        padding: 10rem;
+        margin: 1rem;
+    }
+
+}
 
 
 /*Footer*/

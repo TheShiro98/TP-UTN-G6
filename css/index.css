@@ -1,0 +1,212 @@
+body {
+    background-color: coral;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*navbar*/
+#menuFijo {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Establece el sombreado */
+    z-index: 10;
+}
+
+
+.navbar {
+    background-color: burlywood;
+    color: blue;
+}
+
+.container-fluid img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.navbar-brand {
+    color: coral;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.navbar-toggler-icon {
+    background-color: coral;
+
+}
+
+.d-flex .btn {
+    border-radius: 50px;
+    border-color: black;
+    color: black;
+    background-color: coral;
+}
+
+.d-flex .form-control {
+    border-radius: 50px;
+    border-color: black;
+    color: black;
+
+}
+
+/*Carrusel*/
+.carousel .carousel-inner {
+    overflow: hidden;
+    filter: brightness(50%)
+}
+
+.carousel h1 {
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* se utiliza para aplicar transformaciones a un elemento, como rotación, escala, sesgado, traslación (translate) o deformación. */
+    color: white;
+    z-index: 3;
+}
+
+.carousel h1 b {
+    color: #ff7f50;
+}
+
+@media screen and (max-width: 700px) {
+    .carousel {
+        margin-top: 4rem;
+    }
+}
+
+/*Nuestras Marcas*/
+#nuestrasMarcas {
+    padding: 50px;
+    background-color: rgba(225, 225, 225, 0.39);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    border-color: #ffffff;
+}
+
+#nuestrasMarcas h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#nuestrasMarcas #iconos {
+    display: flex;
+    justify-content: center;
+    background-color: #ff7f505a;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#nuestrasMarcas #iconos .marcas {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+    #iconos {
+        flex-direction: column;
+        align-items: stretch;
+        margin: auto;
+    }
+
+    #nuestrasMarcas #iconos .marcas {
+        margin-top: 1rem;
+    }
+
+    .carousel h1 {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* se utiliza para aplicar transformaciones a un elemento, como rotación, escala, sesgado, traslación (translate) o deformación. */
+        color: white;
+        z-index: 3;
+    }
+}
+
+
+/*Motos fotos*/
+.tituloKawasaki {
+    margin-top: 5rem;
+    max-width: 100%;
+}
+
+.container .row {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+.container .col-md-3 {
+    display: flex;
+    flex-wrap: 0;
+}
+
+.card-body {
+    background-color: rgb(176, 174, 174);
+    border-top: 2px solid black;
+    box-shadow: 0 10px 10px black;
+}
+
+@media screen and (max-width: 700px) {
+    .tituloKawasaki {
+        margin-top: 5rem;
+        max-width: 100%;
+    }
+}
+
+/*Contactos y redes*/
+#contactos {
+    background-color: rgba(225, 225, 225, 0.39);
+    padding: 0.5rem;
+}
+
+#contactos .row {
+    background-color: #ff7f505a;
+    padding: 20px;
+}
+
+#contactos .imagen {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+    #contactos .row {
+        display: grid;
+    }
+
+    #contactps .row .col {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/*Mapa de Google*/
+#map-container {
+    padding: 10rem;
+    margin: 5rem;
+}
+
+
+
+/*Footer*/
+#copy {
+    background-color: #ff7f50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
